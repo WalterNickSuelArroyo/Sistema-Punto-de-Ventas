@@ -8,6 +8,7 @@ public class TextFieldEvent {
         char car = evt.getKeyChar();
         if ((car<'a' || car>'z')&&(car<'A' || car>'Z') &&
                 (car != (char) KeyEvent.VK_BACK_SPACE)&& (car !=(char) KeyEvent.VK_SPACE)){           
+            evt.consume();
         }
     }
 }
