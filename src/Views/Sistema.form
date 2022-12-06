@@ -486,6 +486,10 @@
                               <Font name="Tahoma" size="18" style="0"/>
                             </Property>
                           </Properties>
+                          <Events>
+                            <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="TextFieldCliente_DniKeyReleased"/>
+                            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="TextFieldCliente_DniKeyTyped"/>
+                          </Events>
                         </Component>
                         <Component class="javax.swing.JLabel" name="LabelCliente_Apellido">
                           <Properties>
@@ -501,6 +505,10 @@
                               <Font name="Tahoma" size="18" style="0"/>
                             </Property>
                           </Properties>
+                          <Events>
+                            <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="TextField_BuscarCliente2KeyReleased"/>
+                            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="TextField_BuscarCliente2KeyTyped"/>
+                          </Events>
                         </Component>
                         <Component class="javax.swing.JLabel" name="LabelCliente_Telefono">
                           <Properties>
@@ -516,6 +524,10 @@
                               <Font name="Tahoma" size="18" style="0"/>
                             </Property>
                           </Properties>
+                          <Events>
+                            <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="TextField_BuscarCliente3KeyReleased"/>
+                            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="TextField_BuscarCliente3KeyTyped"/>
+                          </Events>
                         </Component>
                         <Component class="javax.swing.JLabel" name="LabelCliente_Nombre">
                           <Properties>
@@ -531,6 +543,10 @@
                               <Font name="Tahoma" size="18" style="0"/>
                             </Property>
                           </Properties>
+                          <Events>
+                            <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="TextFieldCliente_NombreKeyReleased"/>
+                            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="TextFieldCliente_NombreKeyTyped"/>
+                          </Events>
                         </Component>
                         <Component class="javax.swing.JLabel" name="LabelCliente_Email">
                           <Properties>
@@ -546,6 +562,9 @@
                               <Font name="Tahoma" size="18" style="0"/>
                             </Property>
                           </Properties>
+                          <Events>
+                            <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="TextField_BuscarCliente5KeyReleased"/>
+                          </Events>
                         </Component>
                         <Component class="javax.swing.JLabel" name="LabelCliente_Direccion">
                           <Properties>
@@ -561,6 +580,9 @@
                               <Font name="Tahoma" size="18" style="0"/>
                             </Property>
                           </Properties>
+                          <Events>
+                            <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="TextField_BuscarCliente6KeyReleased"/>
+                          </Events>
                         </Component>
                         <Component class="javax.swing.JButton" name="ButtonCliente_Agregar">
                           <Properties>

@@ -1,6 +1,8 @@
 
 package Views;
 
+import Library.Objetos;
+
 public class Sistema extends javax.swing.JFrame {
 
     public Sistema() {
@@ -173,31 +175,73 @@ public class Sistema extends javax.swing.JFrame {
         LabelCliente_Dni.setText("DNI");
 
         TextFieldCliente_Dni.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        TextFieldCliente_Dni.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                TextFieldCliente_DniKeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                TextFieldCliente_DniKeyTyped(evt);
+            }
+        });
 
         LabelCliente_Apellido.setForeground(new java.awt.Color(0, 0, 0));
         LabelCliente_Apellido.setText("Apellido");
 
         TextField_BuscarCliente2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        TextField_BuscarCliente2.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                TextField_BuscarCliente2KeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                TextField_BuscarCliente2KeyTyped(evt);
+            }
+        });
 
         LabelCliente_Telefono.setForeground(new java.awt.Color(0, 0, 0));
         LabelCliente_Telefono.setText("Telefono");
 
         TextField_BuscarCliente3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        TextField_BuscarCliente3.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                TextField_BuscarCliente3KeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                TextField_BuscarCliente3KeyTyped(evt);
+            }
+        });
 
         LabelCliente_Nombre.setForeground(new java.awt.Color(0, 0, 0));
         LabelCliente_Nombre.setText("Nombre");
 
         TextFieldCliente_Nombre.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        TextFieldCliente_Nombre.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                TextFieldCliente_NombreKeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                TextFieldCliente_NombreKeyTyped(evt);
+            }
+        });
 
         LabelCliente_Email.setForeground(new java.awt.Color(0, 0, 0));
         LabelCliente_Email.setText("Email");
 
         TextField_BuscarCliente5.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        TextField_BuscarCliente5.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                TextField_BuscarCliente5KeyReleased(evt);
+            }
+        });
 
         LabelCliente_Direccion.setForeground(new java.awt.Color(0, 0, 0));
         LabelCliente_Direccion.setText("Direccion");
 
         TextField_BuscarCliente6.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        TextField_BuscarCliente6.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                TextField_BuscarCliente6KeyReleased(evt);
+            }
+        });
 
         ButtonCliente_Agregar.setBackground(new java.awt.Color(153, 153, 153));
         ButtonCliente_Agregar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Agregar.png"))); // NOI18N
@@ -384,8 +428,48 @@ public class Sistema extends javax.swing.JFrame {
     }//GEN-LAST:event_ButtonClienteActionPerformed
 
     private void LabelImage_ClienteMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LabelImage_ClienteMouseClicked
-        
+        Objetos.uploadimage.CargarImagen(LabelImage_Cliente);
     }//GEN-LAST:event_LabelImage_ClienteMouseClicked
+
+    private void TextFieldCliente_DniKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TextFieldCliente_DniKeyReleased
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TextFieldCliente_DniKeyReleased
+
+    private void TextFieldCliente_DniKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TextFieldCliente_DniKeyTyped
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TextFieldCliente_DniKeyTyped
+
+    private void TextFieldCliente_NombreKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TextFieldCliente_NombreKeyReleased
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TextFieldCliente_NombreKeyReleased
+
+    private void TextFieldCliente_NombreKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TextFieldCliente_NombreKeyTyped
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TextFieldCliente_NombreKeyTyped
+
+    private void TextField_BuscarCliente2KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TextField_BuscarCliente2KeyReleased
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TextField_BuscarCliente2KeyReleased
+
+    private void TextField_BuscarCliente2KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TextField_BuscarCliente2KeyTyped
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TextField_BuscarCliente2KeyTyped
+
+    private void TextField_BuscarCliente5KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TextField_BuscarCliente5KeyReleased
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TextField_BuscarCliente5KeyReleased
+
+    private void TextField_BuscarCliente3KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TextField_BuscarCliente3KeyReleased
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TextField_BuscarCliente3KeyReleased
+
+    private void TextField_BuscarCliente3KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TextField_BuscarCliente3KeyTyped
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TextField_BuscarCliente3KeyTyped
+
+    private void TextField_BuscarCliente6KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TextField_BuscarCliente6KeyReleased
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TextField_BuscarCliente6KeyReleased
     // </editor-fold> 
     
     public static void main(String args[]) {
