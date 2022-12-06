@@ -340,8 +340,8 @@
                                   <Group type="103" groupAlignment="1" attributes="0">
                                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                           <Component id="TextFieldCliente_Dni" pref="171" max="32767" attributes="0"/>
-                                          <Component id="TextField_BuscarCliente2" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="TextField_BuscarCliente3" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="TextFieldCliente_Apellido" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="TextFieldCliente_Telefono" alignment="0" max="32767" attributes="0"/>
                                           <Component id="LabelCliente_Dni" alignment="0" max="32767" attributes="0"/>
                                           <Component id="LabelCliente_Apellido" alignment="0" max="32767" attributes="0"/>
                                           <Component id="LabelCliente_Telefono" alignment="0" max="32767" attributes="0"/>
@@ -353,8 +353,8 @@
                                       <Component id="ButtonCliente_Cancelar" min="-2" pref="83" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                           <Component id="TextFieldCliente_Nombre" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="TextField_BuscarCliente5" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="TextField_BuscarCliente6" alignment="0" pref="171" max="32767" attributes="0"/>
+                                          <Component id="TextFieldCliente_Email" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="TextFieldCliente_Direccion" alignment="0" pref="171" max="32767" attributes="0"/>
                                           <Component id="LabelCliente_Direccion" alignment="0" max="32767" attributes="0"/>
                                           <Component id="LabelCliente_Email" alignment="0" max="32767" attributes="0"/>
                                           <Component id="LabelCliente_Nombre" alignment="0" max="32767" attributes="0"/>
@@ -380,11 +380,11 @@
                                           <EmptySpace type="separate" max="-2" attributes="0"/>
                                           <Component id="LabelCliente_Apellido" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="TextField_BuscarCliente2" min="-2" max="-2" attributes="0"/>
+                                          <Component id="TextFieldCliente_Apellido" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                           <Component id="LabelCliente_Telefono" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="TextField_BuscarCliente3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="TextFieldCliente_Telefono" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                       <Group type="102" attributes="0">
                                           <Component id="LabelCliente_Nombre" min="-2" max="-2" attributes="0"/>
@@ -393,11 +393,11 @@
                                           <EmptySpace type="separate" max="-2" attributes="0"/>
                                           <Component id="LabelCliente_Email" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="TextField_BuscarCliente5" min="-2" max="-2" attributes="0"/>
+                                          <Component id="TextFieldCliente_Email" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                           <Component id="LabelCliente_Direccion" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="TextField_BuscarCliente6" min="-2" max="-2" attributes="0"/>
+                                          <Component id="TextFieldCliente_Direccion" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
@@ -499,15 +499,15 @@
                             <Property name="text" type="java.lang.String" value="Apellido"/>
                           </Properties>
                         </Component>
-                        <Component class="javax.swing.JTextField" name="TextField_BuscarCliente2">
+                        <Component class="javax.swing.JTextField" name="TextFieldCliente_Apellido">
                           <Properties>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Tahoma" size="18" style="0"/>
                             </Property>
                           </Properties>
                           <Events>
-                            <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="TextField_BuscarCliente2KeyReleased"/>
-                            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="TextField_BuscarCliente2KeyTyped"/>
+                            <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="TextFieldCliente_ApellidoKeyReleased"/>
+                            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="TextFieldCliente_ApellidoKeyTyped"/>
                           </Events>
                         </Component>
                         <Component class="javax.swing.JLabel" name="LabelCliente_Telefono">
@@ -518,15 +518,15 @@
                             <Property name="text" type="java.lang.String" value="Telefono"/>
                           </Properties>
                         </Component>
-                        <Component class="javax.swing.JTextField" name="TextField_BuscarCliente3">
+                        <Component class="javax.swing.JTextField" name="TextFieldCliente_Telefono">
                           <Properties>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Tahoma" size="18" style="0"/>
                             </Property>
                           </Properties>
                           <Events>
-                            <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="TextField_BuscarCliente3KeyReleased"/>
-                            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="TextField_BuscarCliente3KeyTyped"/>
+                            <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="TextFieldCliente_TelefonoKeyReleased"/>
+                            <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="TextFieldCliente_TelefonoKeyTyped"/>
                           </Events>
                         </Component>
                         <Component class="javax.swing.JLabel" name="LabelCliente_Nombre">
@@ -556,14 +556,14 @@
                             <Property name="text" type="java.lang.String" value="Email"/>
                           </Properties>
                         </Component>
-                        <Component class="javax.swing.JTextField" name="TextField_BuscarCliente5">
+                        <Component class="javax.swing.JTextField" name="TextFieldCliente_Email">
                           <Properties>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Tahoma" size="18" style="0"/>
                             </Property>
                           </Properties>
                           <Events>
-                            <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="TextField_BuscarCliente5KeyReleased"/>
+                            <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="TextFieldCliente_EmailKeyReleased"/>
                           </Events>
                         </Component>
                         <Component class="javax.swing.JLabel" name="LabelCliente_Direccion">
@@ -574,14 +574,14 @@
                             <Property name="text" type="java.lang.String" value="Direccion"/>
                           </Properties>
                         </Component>
-                        <Component class="javax.swing.JTextField" name="TextField_BuscarCliente6">
+                        <Component class="javax.swing.JTextField" name="TextFieldCliente_Direccion">
                           <Properties>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Tahoma" size="18" style="0"/>
                             </Property>
                           </Properties>
                           <Events>
-                            <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="TextField_BuscarCliente6KeyReleased"/>
+                            <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="TextFieldCliente_DireccionKeyReleased"/>
                           </Events>
                         </Component>
                         <Component class="javax.swing.JButton" name="ButtonCliente_Agregar">
