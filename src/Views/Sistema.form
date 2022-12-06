@@ -31,7 +31,7 @@
           </Group>
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="206" max="-2" attributes="0"/>
-              <Component id="jButton1" min="-2" pref="83" max="-2" attributes="0"/>
+              <Component id="ButtonCliente" min="-2" pref="83" max="-2" attributes="0"/>
               <EmptySpace max="32767" attributes="0"/>
           </Group>
       </Group>
@@ -41,7 +41,7 @@
           <Group type="102" alignment="0" attributes="0">
               <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
-              <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+              <Component id="ButtonCliente" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Component id="TabbedPanePrincipal" max="32767" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
@@ -313,8 +313,8 @@
                       </Properties>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
-                          <JTabbedPaneConstraints tabName="Clientes">
-                            <Property name="tabTitle" type="java.lang.String" value="Clientes"/>
+                          <JTabbedPaneConstraints tabName="Registro de clientes">
+                            <Property name="tabTitle" type="java.lang.String" value="Registro de clientes"/>
                           </JTabbedPaneConstraints>
                         </Constraint>
                       </Constraints>
@@ -339,12 +339,12 @@
                                   <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="1" attributes="0">
                                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                          <Component id="LabelCliente_Dni" min="-2" max="-2" attributes="0"/>
-                                          <Component id="LabelCliente_Apellido" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="LabelCliente_Telefono" alignment="0" min="-2" max="-2" attributes="0"/>
                                           <Component id="TextFieldCliente_Dni" pref="171" max="32767" attributes="0"/>
                                           <Component id="TextField_BuscarCliente2" alignment="0" max="32767" attributes="0"/>
                                           <Component id="TextField_BuscarCliente3" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="LabelCliente_Dni" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="LabelCliente_Apellido" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="LabelCliente_Telefono" alignment="0" max="32767" attributes="0"/>
                                       </Group>
                                       <Component id="ButtonCliente_Agregar" min="-2" pref="83" max="-2" attributes="0"/>
                                   </Group>
@@ -352,12 +352,12 @@
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Component id="ButtonCliente_Cancelar" min="-2" pref="83" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                          <Component id="LabelCliente_Nombre" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="LabelCliente_Email" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="LabelCliente_Direccion" alignment="0" min="-2" max="-2" attributes="0"/>
                                           <Component id="TextFieldCliente_Nombre" alignment="0" max="32767" attributes="0"/>
                                           <Component id="TextField_BuscarCliente5" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="TextField_BuscarCliente6" alignment="0" min="-2" pref="171" max="-2" attributes="0"/>
+                                          <Component id="TextField_BuscarCliente6" alignment="0" pref="171" max="32767" attributes="0"/>
+                                          <Component id="LabelCliente_Direccion" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="LabelCliente_Email" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="LabelCliente_Nombre" alignment="0" max="32767" attributes="0"/>
                                       </Group>
                                   </Group>
                                   <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
@@ -405,7 +405,7 @@
                                       <Component id="ButtonCliente_Agregar" min="-2" max="-2" attributes="0"/>
                                       <Component id="ButtonCliente_Cancelar" min="-2" max="-2" attributes="0"/>
                                   </Group>
-                                  <EmptySpace pref="14" max="32767" attributes="0"/>
+                                  <EmptySpace max="32767" attributes="0"/>
                               </Group>
                           </Group>
                         </DimensionLayout>
@@ -439,7 +439,7 @@
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
                                       <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
-                                      <Component id="jLabel6" min="-2" pref="149" max="-2" attributes="0"/>
+                                      <Component id="LabelImage_Cliente" min="-2" pref="149" max="-2" attributes="0"/>
                                       <EmptySpace pref="17" max="32767" attributes="0"/>
                                   </Group>
                               </Group>
@@ -448,14 +448,14 @@
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="jLabel6" min="-2" pref="116" max="-2" attributes="0"/>
+                                      <Component id="LabelImage_Cliente" min="-2" pref="116" max="-2" attributes="0"/>
                                       <EmptySpace max="32767" attributes="0"/>
                                   </Group>
                               </Group>
                             </DimensionLayout>
                           </Layout>
                           <SubComponents>
-                            <Component class="javax.swing.JLabel" name="jLabel6">
+                            <Component class="javax.swing.JLabel" name="LabelImage_Cliente">
                               <Properties>
                                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                                   <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
@@ -466,6 +466,9 @@
                                   <Color id="Hand Cursor"/>
                                 </Property>
                               </Properties>
+                              <Events>
+                                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="LabelImage_ClienteMouseClicked"/>
+                              </Events>
                             </Component>
                           </SubComponents>
                         </Container>
@@ -565,7 +568,7 @@
                               <Color blue="99" green="99" red="99" type="rgb"/>
                             </Property>
                             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                              <Image iconType="3" name="/Resources/people.png"/>
+                              <Image iconType="3" name="/Resources/Agregar.png"/>
                             </Property>
                             <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
                               <Color id="Hand Cursor"/>
@@ -578,7 +581,7 @@
                               <Color blue="99" green="99" red="99" type="rgb"/>
                             </Property>
                             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                              <Image iconType="3" name="/Resources/people.png"/>
+                              <Image iconType="3" name="/Resources/Cancelar.png"/>
                             </Property>
                             <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
                               <Color id="Hand Cursor"/>
@@ -599,12 +602,12 @@
                       <Layout>
                         <DimensionLayout dim="0">
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <EmptySpace min="0" pref="413" max="32767" attributes="0"/>
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                           </Group>
                         </DimensionLayout>
                         <DimensionLayout dim="1">
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <EmptySpace min="0" pref="439" max="32767" attributes="0"/>
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                           </Group>
                         </DimensionLayout>
                       </Layout>
@@ -617,7 +620,7 @@
         </Container>
       </SubComponents>
     </Container>
-    <Component class="javax.swing.JButton" name="jButton1">
+    <Component class="javax.swing.JButton" name="ButtonCliente">
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="99" green="99" red="99" type="rgb"/>
@@ -629,6 +632,9 @@
           <Color id="Hand Cursor"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ButtonClienteActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>
