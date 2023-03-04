@@ -245,10 +245,20 @@ public class Sistema extends javax.swing.JFrame {
         ButtonCliente_Agregar.setBackground(new java.awt.Color(153, 153, 153));
         ButtonCliente_Agregar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Agregar.png"))); // NOI18N
         ButtonCliente_Agregar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        ButtonCliente_Agregar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ButtonCliente_AgregarActionPerformed(evt);
+            }
+        });
 
         ButtonCliente_Cancelar.setBackground(new java.awt.Color(153, 153, 153));
         ButtonCliente_Cancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/Cancelar.png"))); // NOI18N
         ButtonCliente_Cancelar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        ButtonCliente_Cancelar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ButtonCliente_CancelarActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
@@ -519,6 +529,14 @@ public class Sistema extends javax.swing.JFrame {
             LabelCliente_Direccion.setForeground(new Color(0,153,51));
         }
     }//GEN-LAST:event_TextFieldCliente_DireccionKeyReleased
+
+    private void ButtonCliente_AgregarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonCliente_AgregarActionPerformed
+        cliente.RegistrarCliente();
+    }//GEN-LAST:event_ButtonCliente_AgregarActionPerformed
+
+    private void ButtonCliente_CancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonCliente_CancelarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ButtonCliente_CancelarActionPerformed
     // </editor-fold> 
     
     public static void main(String args[]) {
