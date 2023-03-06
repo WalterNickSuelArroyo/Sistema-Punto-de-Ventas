@@ -1,13 +1,15 @@
 
 package ViewModels;
 
+import Conexion.Conexion;
+import Conexion.Consult;
 import Library.Objetos;
 import java.awt.Color;
 import java.util.ArrayList;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
 
-public class ClientesVM {
+public class ClientesVM extends Consult{
     private String accion = "insert";
     private final ArrayList<JLabel> _label;
     private final ArrayList<JTextField> _textField;

@@ -2,9 +2,10 @@ package Conexion;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.SQLException;
 public class Conexion {
 
-    private String db = "punto_de_ventas";
+    private String db = "punto_de_venta";
     private String user = "root";
     private String password = "1234";
     private String urlMysql = "jdbc:mysql://localhost/" + db + "?SslMode=none";
@@ -14,8 +15,16 @@ public class Conexion {
         try {
             Class.forName("com.mysql.jdbc.Driver");
             conn = DriverManager.getConnection(this.urlMysql,this.user,this.password);
-        } catch (ClassNotFoundException e) {
+            if (conn != null) {
+                System.out.println("Conexion a la base de datos "+this.db+"...Listo ");
+            }
+        } catch (ClassNotFoundException | SQLException e) {
             System.out.println("Error: "+e);
         }
     }
+
+    public Connection getConn() {
+        return conn;
+    }
+    
 }
