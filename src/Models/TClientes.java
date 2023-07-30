@@ -2,24 +2,45 @@
 package Models;
 
 public class TClientes {
-    private int IdCliente;
+    private int ID;
     private String Nid;
     private String Nombre;
     private String Apellido;
     private String Direccion;
     private String Email;
     private String Telefono;
+    private String Fecha;
+    private boolean Credito;
+    private byte[] Imagen;
 
     public TClientes() {       
     }
 
-    public int getIdCliente() {
-        return IdCliente;
+    public int getID() {
+        return ID;
     }
 
-    public void setIdCliente(int IdCliente) {
-        this.IdCliente = IdCliente;
+    public void setID(int ID) {
+        this.ID = ID;
     }
+
+    public String getFecha() {
+        return Fecha;
+    }
+
+    public void setFecha(String Fecha) {
+        this.Fecha = Fecha;
+    }
+
+    public boolean isCredito() {
+        return Credito;
+    }
+
+    public void setCredito(boolean Credito) {
+        this.Credito = Credito;
+    }
+
+
 
     public String getNid() {
         return Nid;
@@ -67,6 +88,14 @@ public class TClientes {
 
     public void setTelefono(String Telefono) {
         this.Telefono = Telefono;
+    }
+
+    public byte[] getImagen() {
+        return Imagen;
+    }
+
+    public void setImagen(byte[] Imagen) {
+        this.Imagen = Imagen;
     }
     
     
