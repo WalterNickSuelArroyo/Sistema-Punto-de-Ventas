@@ -4,13 +4,21 @@ package ViewModels;
 import Conexion.Conexion;
 import Conexion.Consult;
 import Library.Objetos;
+import Library.Uploadimage;
+import Models.TClientes;
 import java.awt.Color;
+import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 
+import org.apache.commons.dbutils.QueryRunner;
+
 public class ClientesVM extends Consult{
-    private String accion = "insert";
+    private String _accion = "insert";
     private final ArrayList<JLabel> _label;
     private final ArrayList<JTextField> _textField;
     
@@ -53,7 +61,36 @@ public class ClientesVM extends Consult{
                                     _label.get(5).setText("Ingrese la direccion");
                                     _label.get(5).setForeground(Color.red);
                                     _textField.get(5).requestFocus();
+                                }else{
+                                    int count;
+                                    List<TClientes> listEmail = clientes().stream().filter(u->u.getEmail().equals(_textField.get(3).getText())).collect(Collectors.toList());
+                                    count = listEmail.size();
+                                    List<TClientes> listNid = clientes().stream().filter(u->u.getNid().equals(_textField.get(0).getText())).collect(Collectors.toList());
+                                    count+=listNid.size();
+                                    switch (_accion) {
+                                        case "insert":
+                                            try {
+                                                if(count == 0){
+                                                    insert();
+                                                }
+                                                else {
+													if (!listEmail.isEmpty()) {
+														_label.get(3).setText("El email ya esta registrado");
+														_label.get(3).setForeground(Color.RED);
+														_textField.get(3).requestFocus();
+													}
+													if (!listNid.isEmpty()) {
+														_label.get(0).setText("El nid ya esta registrado");
+														_label.get(0).setForeground(Color.RED);
+														_textField.get(0).requestFocus();
+													}
+												}
+	                                        }catch (SQLException ex) {
+	                                        	JOptionPane.showMessageDialog(null, ex);
+	                                }
+	                                        break;
                                 }
+            }
             
         }
             
@@ -65,4 +102,47 @@ public class ClientesVM extends Consult{
         }
         }
     }
+    private void Insert() throws SQLException {
+    	try {
+			final QueryRunner qr = new QueryRunner(true);
+			getConn().setAutoCommit(false);
+			byte[] image = Uploadimage.getImageByte();
+			if (image == null) {
+				image = Objetos.uploadimage.getTransFoto(_label.get(6));
+			}
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

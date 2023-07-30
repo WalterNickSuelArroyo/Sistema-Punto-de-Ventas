@@ -7,7 +7,7 @@ public class Conexion {
 
     private String db = "punto_de_venta";
     private String user = "root";
-    private String password = "1234";
+    private String password = "";
     private String urlMysql = "jdbc:mysql://localhost/" + db + "?SslMode=none";
     private Connection conn = null;
 

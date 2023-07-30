@@ -441,6 +441,7 @@ public class Sistema extends javax.swing.JFrame {
         label.add(LabelCliente_Email);
         label.add(LabelCliente_Telefono);
         label.add(LabelCliente_Direccion);
+        label.add(LabelCliente_Direccion);
         
         ArrayList<JTextField> textField = new ArrayList();
         textField .add(TextFieldCliente_Dni);
