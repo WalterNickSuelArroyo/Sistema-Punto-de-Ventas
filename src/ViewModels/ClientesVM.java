@@ -11,6 +11,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
+import javax.swing.ImageIcon;
 import javax.swing.JCheckBox;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
@@ -141,9 +142,34 @@ public class ClientesVM extends Consult {
             };
             qr.insert(getConn(), sqlReport, new ColumnListHandler(), dataReport);
             getConn().commit();
+            restablecer();
         } catch (SQLException ex) {
             getConn().rollback();
             JOptionPane.showMessageDialog(null, ex);
         }
+    }
+    public final void restablecer(){
+        _accion = "insert";
+        _textField.get(0).setText("");
+        _textField.get(1).setText("");
+        _textField.get(2).setText("");
+        _textField.get(3).setText("");
+        _textField.get(4).setText("");
+        _textField.get(5).setText("");
+        _checkBoxCredito.setSelected(false);
+        _checkBoxCredito.setForeground(new Color(102, 102, 102));
+        _label.get(0).setText("Nid");
+        _label.get(0).setForeground(new Color(102,102,102));
+        _label.get(1).setText("Nombre");
+        _label.get(1).setForeground(new Color(102,102,102));
+        _label.get(2).setText("Apellido");
+        _label.get(2).setForeground(new Color(102,102,102));
+        _label.get(3).setText("Email");
+        _label.get(3).setForeground(new Color(102,102,102));
+        _label.get(4).setText("Telefono");
+        _label.get(4).setForeground(new Color(102,102,102));
+        _label.get(5).setText("Direccion");
+        _label.get(5).setForeground(new Color(102,102,102));
+        _label.get(6).setIcon(new ImageIcon(getClass().getClassLoader().getResource("Resources/logo-google.png")));
     }
 }

@@ -541,7 +541,7 @@ public class Sistema extends javax.swing.JFrame {
     }//GEN-LAST:event_ButtonCliente_AgregarActionPerformed
 
     private void ButtonCliente_CancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonCliente_CancelarActionPerformed
-        // TODO add your handling code here:
+        cliente.restablecer();
     }//GEN-LAST:event_ButtonCliente_CancelarActionPerformed
     // </editor-fold> 
     
